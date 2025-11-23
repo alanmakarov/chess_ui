@@ -9,7 +9,9 @@ class ChessBoard:
     def on_square_click(self, event):
         pass
     def on_button_click(self):
-        pass
+        self._gameBoard.newGame()
+        self.draw_board()
+        self.status_label.config(text="")
 
     def run(self):
         self.root.mainloop()
