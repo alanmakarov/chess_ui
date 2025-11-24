@@ -1,4 +1,7 @@
-import tkinter as tk
+try:
+    import tkinter as tk
+except ImportError:
+    from moctkinter import Moc_Tk as tk
 from gameBoard import I_GameBoard, MocGameBoard
 
 class ChessBoard:
